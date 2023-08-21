@@ -1,6 +1,6 @@
 # wat-the-wasm.nvim
 
-Expolore WebAssembly Text. View WebAssembly Text how it is assembled to WebAssembly.
+Explore WebAssembly Text and how it gets assembled into the WebAssembly binary.
 
 ## Install
 
