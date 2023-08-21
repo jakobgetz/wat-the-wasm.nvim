@@ -1,6 +1,6 @@
 # wat-the-wasm.nvim
 
-Expolore WebAssembly Text. View WebAssembly Text how it gets assembled to WebAssembly.
+Expolore WebAssembly Text. View WebAssembly Text how it is assembled to WebAssembly.
 
 ## Install
 
@@ -19,9 +19,9 @@ require "wat-the-wasm".setup()
 Use these commands on your `.wat` files to explore the assembler.
 ```
 :Wat2Wasm     -- display WebAssembly Text as WebAssembly Binary
-:Wasm2Wat     -- display WebAssembly Binary as WebAssembly Text
-:WatTheWasm   -- display WebAssembly Text as WebAssembly Binary with verbose Information
-:WatToggle    -- toggle between WebAssembly Text, Verbose WebAssembly Binary and WebAssembly Text that gets generated from the Binary
+:Wat2Wat      -- display WebAssembly Text, with the information the WebAssembly Binary contains
+:WatTheWasm   -- display WebAssembly Text as WebAssembly Binary with verbose information
+:Wat2Wat      -- revert back to the original WebAssembly Text
 ```
 
 ## Config
