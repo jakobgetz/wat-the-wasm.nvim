@@ -18,10 +18,10 @@ require "wat-the-wasm".setup()
 
 Use these commands on your `.wat` files to explore the assembler.
 ```
-:Wat2Wasm     -- display WebAssembly Text as WebAssembly Binary
-:Wat2Wat      -- display WebAssembly Text, with the information the WebAssembly Binary contains
-:WatTheWasm   -- display WebAssembly Text as WebAssembly Binary with verbose information
-:Wat2Wat      -- revert back to the original WebAssembly Text
+:Wat2Wasm     -- display WebAssembly Text as WebAssembly binary
+:Wat2Wat      -- display WebAssembly Text, with the information the WebAssembly binary contains
+:WatTheWasm   -- display WebAssembly Text as WebAssembly binary with verbose information
+:WatRevert    -- revert back to the original WebAssembly Text
 ```
 
 ## Config
