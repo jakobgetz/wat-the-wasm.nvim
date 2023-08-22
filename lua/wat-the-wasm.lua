@@ -14,20 +14,6 @@ local is_wat_file = function()
   return false
 end
 
-local cmd_success = function(cmd)
-  local exit_code = 0
-  local job_id = vim.fn.jobstart(cmd, {
-    on_exit = function(_, code)
-      exit_code = code
-    end
-  })
-  vim.fn.jobwait(job_id, "w")
-  if exit_code == 0 then
-    return true
-  end
-  return false
-end
-
 local execute = function(command)
   vim.fn.jobstart(command, {
     on_exit = function(_, code)
