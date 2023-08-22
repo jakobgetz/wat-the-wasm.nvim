@@ -19,7 +19,7 @@ local execute = function(command)
     on_exit = function(_, code)
       if code == 0 then
         local file_path = vim.fn.expand("%:p")
-        original_buffer[file_path] = table.concat(vim.fn.readfile(file_path), "\n")
+        original_buffer[file_path] = vim.fn.readfile(file_path)
         vim.cmd(":%!" .. command)
         return
       end
@@ -49,7 +49,7 @@ M.revert = function()
     return
   end
   local current_buffer = vim.api.nvim_get_current_buf()
-  vim.api.nvim_buf_set_lines(current_buffer, 0, -1, false, { original_buffer[file_path] })
+  vim.api.nvim_buf_set_lines(current_buffer, 0, -1, false, original_buffer[file_path])
   original_buffer[file_path] = nil
 end
 
